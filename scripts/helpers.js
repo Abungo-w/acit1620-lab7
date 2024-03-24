@@ -133,9 +133,9 @@ export function showCard() {
     getShowBtn().toggleAttribute('disabled', true);
 
     // animate the card
-    document.getElementsByClassName('flip');
     document.getElementsByClassName('fade');
-
+    document.getElementsByClassName('flip');
+    
 }
 
 export function toggleInputState(e) {
