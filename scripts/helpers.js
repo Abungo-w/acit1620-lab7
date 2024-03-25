@@ -122,7 +122,10 @@ export function setCard() {
     // hide the card
     cardNode.classList.toggle('hidden', true);
 
-     // cancel the animation
+    // cancel the animation
+    const tile = document.querySelector('img');
+    tile.classList.remove('fade');
+    tile.parentNode.classList.remove('flip');
 }
 
 export function showCard() {
@@ -133,9 +136,9 @@ export function showCard() {
     getShowBtn().toggleAttribute('disabled', true);
 
     // animate the card
-    document.getElementsByClassName('fade');
-    document.getElementsByClassName('flip');
-    
+    const tile = document.querySelector('img');
+    tile.classList.add('fade');
+    tile.parentNode.classList.add('flip');
 }
 
 export function toggleInputState(e) {
